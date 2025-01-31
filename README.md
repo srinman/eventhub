@@ -93,7 +93,7 @@ Local testing will fail unless DNS is setup resolve private endpoint IP and the 
 
 ## Kafka test troubleshooting commands 
 
-kafkacat -L -b auh-ehub-cus-d-ehub-ns.servicebus.windows.net:9093 \
+kafkacat -L -b abc123.servicebus.windows.net:9093 \
   -X security.protocol=SASL_SSL \
   -X sasl.mechanisms=PLAIN \
   -X sasl.username="$CONNECTION_STRING" \
