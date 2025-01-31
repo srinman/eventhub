@@ -91,15 +91,6 @@ Disable the public endpoint.
 Local testing will fail unless DNS is setup resolve private endpoint IP and the private endpoint is accessible for ports including 9093.     
 
 
-## Kafka test troubleshooting commands 
-
-kafkacat -L -b abc123.servicebus.windows.net:9093 \
-  -X security.protocol=SASL_SSL \
-  -X sasl.mechanisms=PLAIN \
-  -X sasl.username="$CONNECTION_STRING" \
-  -X sasl.password="$CONNECTION_STRING"
-
-
 
 ## Container build   
 
